@@ -1,7 +1,4 @@
 node {
-    agent {
-        label 'master'
-    }
     stages {
         stage ('clone') {
             steps {
