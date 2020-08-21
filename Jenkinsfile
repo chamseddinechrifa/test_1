@@ -1,24 +1,24 @@
-Node {
+node {
     agent {
         label 'master'
     }
     stages {
         stage ('clone') {
             steps {
-                bat label: '', script: 'cd /d D:/Devops && git clone https://github.com/chamseddinechrifa/test_1'
+                bat label: '', script: 'git clone https://github.com/chamseddinechrifa/test_1'
             }
     
 
         }
         stage ('compiler') {
             steps {
-                bat label: '', script: 'cd /d D:/Devops/test_1 && javac App.java '
+                bat label: '', script: ' javac App.java '
             }
             
         }
         stage ('run') {
             steps {
-                bat label: '', script: 'cd /d D:/Devops/test_1 && java App'
+                bat label: '', script: ' java App'
             }
             
         }
