@@ -1,4 +1,4 @@
-None {
+Node {
     agent {
         label 'master'
     }
